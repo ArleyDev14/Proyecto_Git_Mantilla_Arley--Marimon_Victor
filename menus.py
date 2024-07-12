@@ -1,9 +1,9 @@
 def menu_principal():
     print("--------------------------")
     print("Ingresa [1] para --> Registrar una ciudad")
-    print("Ingresa [1] para --> Actualizar datos de una ciudad")
-    print("Ingresa [1] para --> Eliminar ciudad")
-    print("Ingresa [1] para --> Buscar ciudad(Filtros)")
+    print("Ingresa [2] para --> Actualizar datos de una ciudad")
+    print("Ingresa [3] para --> Eliminar ciudad")
+    print("Ingresa [4] para --> Buscar ciudad(Filtros)")
     print("--------------------------")
 
 def pedir_opc():
