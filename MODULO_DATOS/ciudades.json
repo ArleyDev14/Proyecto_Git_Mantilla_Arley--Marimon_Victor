@@ -3,7 +3,7 @@
         {
             "id": 1,
             "nombre": "Bucaramanga",
-            "codigo_postal": 777,
+            "codigo_postal": "777",
             "poblacion": 2000000,
             "pais": "Colombia",
             "moneda": "Peso Colombiano",
@@ -11,8 +11,8 @@
         },
         {
             "id": 2,
-            "nombre": "Bucaramanga",
-            "codigo_postal": 888,
+            "nombre": "bogota",
+            "codigo_postal": "888",
             "poblacion": 2000000,
             "pais": "Colombia",
             "moneda": "Peso Colombiano",
@@ -21,7 +21,7 @@
         {
             "id": 3,
             "nombre": "barranquilla",
-            "codigo_postal": 1000,
+            "codigo_postal": "1000",
             "poblacion": 100000,
             "pais": "colombia",
             "moneda": "peso",
