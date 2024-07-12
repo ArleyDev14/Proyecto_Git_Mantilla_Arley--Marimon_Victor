@@ -4,6 +4,7 @@ def menu_principal():
     print("Ingresa [2] para --> Actualizar datos de una ciudad")
     print("Ingresa [3] para --> Eliminar ciudad")
     print("Ingresa [4] para --> Buscar ciudad(Filtros)")
+    print("Ingresa [5] para --> Ver todas las ciudades")
     print("Ingresa [0] para --> Salir / Cerrar")
     print("--------------------------")
 
