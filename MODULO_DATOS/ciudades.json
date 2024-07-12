@@ -1,13 +1,31 @@
 {
-    "ciudades":[
+    "ciudades": [
         {
-            "id":1,
+            "id": 1,
             "nombre": "Bucaramanga",
             "codigo_postal": 777,
-            "población": 2000000,
+            "poblaci\u00f3n": 2000000,
             "pais": "Colombia",
             "moneda": "Peso Colombiano",
-            "idioma": "Español"
+            "idioma": "Espa\u00f1ol"
+        },
+        {
+            "id": 1,
+            "nombre": "Bucaramanga",
+            "codigo_postal": 777,
+            "poblaci\u00f3n": 2000000,
+            "pais": "Colombia",
+            "moneda": "Peso Colombiano",
+            "idioma": "Espa\u00f1ol"
+        },
+        {
+            "id": 3,
+            "nombre": "barranquilla",
+            "codigo_postal": 1000,
+            "poblaci\u00f3n": 100000,
+            "pais": "colombia",
+            "moneda": "peso",
+            "idioma": "espa\u00f1ol"
         }
     ]
 }
