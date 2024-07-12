@@ -1,0 +1,13 @@
+{
+    "ciudades":[
+        {
+            "id":1,
+            "nombre": "Bucaramanga",
+            "codigo_postal": 777,
+            "población": 2000000,
+            "pais": "Colombia",
+            "moneda": "Peso Colombiano",
+            "idioma": "Español"
+        }
+    ]
+}
