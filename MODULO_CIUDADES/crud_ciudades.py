@@ -8,6 +8,7 @@ from MODULO_DATOS.datos import *
 project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 RUTA_JSON = os.path.join(project_root,  "MODULO_DATOS", "ciudades.json")
 
+
 def agregar_ciudad():
     ciudades = cargar_datos(RUTA_JSON)
 
