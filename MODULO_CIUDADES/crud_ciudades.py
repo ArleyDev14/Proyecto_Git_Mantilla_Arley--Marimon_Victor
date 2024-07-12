@@ -81,3 +81,14 @@ def actualizar_ciudades():
         print(f"La ciudad con el codigo postal {codigo} NO existe")
         print("")
 
+def print_all():
+    ciudades = cargar_datos(RUTA_JSON)
+    print("------------------------------")
+    for i in ciudades["ciudades"]:
+        print(f"Ciudad = {i['nombre']}")
+        print(f"Codigo Postal = {i['codigo_postal']}")
+        print(f"Población estimada = {i['poblacion']}")
+        print(f"Pais = {i['pais']}")
+        print(f"Moneda = {i['moneda']}")
+        print(f"Idioma = {i['idioma']}")
+        print("------------------------------")
