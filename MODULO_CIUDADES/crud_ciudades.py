@@ -24,7 +24,7 @@ def agregar_ciudad():
 
     nuevas_ciudades["nombre"] = input("Ingrese el nombre de la ciudad: ")
 
-    nuevas_ciudades["codigo_postal"] = int(input("Ingrese el codigo postal de la ciudad: "))
+    nuevas_ciudades["codigo_postal"] = input("Ingrese el codigo postal de la ciudad: ")
 
     nuevas_ciudades["poblacion"] = int(input("Ingrese la población de la ciudad: "))
 
@@ -44,7 +44,7 @@ def agregar_ciudad():
 def eliminar_ciudad():
     ciudades = cargar_datos(RUTA_JSON)
 
-    ciudad_eliminar = int(input("Ingrese el código postal de la ciudad que desea eliminar"))
+    ciudad_eliminar = input("Ingrese el código postal de la ciudad que desea eliminar")
     contador = -1
     for i in ciudades["ciudades"]:
         contador += 1
@@ -57,7 +57,7 @@ def actualizar_ciudades():
 
     contador = 0
 
-    codigo = int(input("Ingrese el código postal: "))   
+    codigo = input("Ingrese el código postal: ")
 
     for i in ciudades["ciudades"]:
         if(codigo == i["codigo_postal"]):
@@ -81,3 +81,60 @@ def actualizar_ciudades():
         print(f"La ciudad con el codigo postal {codigo} NO existe")
         print("")
 
+    contador == 0
+
+
+def busqueda_avanzada():
+    ciudades = cargar_datos(RUTA_JSON)
+
+    contador = 0
+
+    dato = input("Ingrese el dato (Nombre, Pais o Codigó postal): ")
+
+
+    for i in ciudades["ciudades"]:
+        
+        if(dato == i["nombre"]):
+            contador = 1
+            print("")
+            print("DATOS DE LA CIUDAD")
+            print("")
+            print("Nombre: " + i["nombre"])
+            print("Codigó Postal: " + str(i["codigo_postal"]))
+            print("Población: " + str(i["poblacion"]))
+            print("País: " + i["pais"])
+            print("Moneda: " + i["moneda"])
+            print("Idioma: " + i["idioma"])
+            break
+        elif(dato == i["pais"]):
+            contador = 1
+            print("")
+            print("DATOS DE LA CIUDAD")
+            print("")
+            print("Nombre: " + i["nombre"])
+            print("Codigó Postal: " + str(i["codigo_postal"]))
+            print("Población: " + str(i["poblacion"]))
+            print("País: " + i["pais"])
+            print("Moneda: " + i["moneda"])
+            print("Idioma: " + i["idioma"])
+            break
+        elif(dato == i["codigo_postal"] and contador == 0):
+            contador = 1
+            print("")
+            print("DATOS DE LA CIUDAD")
+            print("")
+            print("Nombre: " + i["nombre"])
+            print("Codigó Postal: " + str(i["codigo_postal"]))
+            print("Población: " + str(i["poblacion"]))
+            print("País: " + i["pais"])
+            print("Moneda: " + i["moneda"])
+            print("Idioma: " + i["idioma"])
+            break
+
+    if(contador == 0):
+        print("")
+        print(f"La ciudad con el dato {dato} NO existe")
+        print("")
+
+    contador = 0
+        
