@@ -26,7 +26,7 @@ def agregar_ciudad():
 
     nuevas_ciudades["codigo_postal"] = int(input("Ingrese el codigo postal de la ciudad: "))
 
-    nuevas_ciudades["población"] = int(input("Ingrese la población de la ciudad: "))
+    nuevas_ciudades["poblacion"] = int(input("Ingrese la población de la ciudad: "))
 
     nuevas_ciudades["pais"] = input("Ingrese el país de la ciudad: ")
 
@@ -39,3 +39,15 @@ def agregar_ciudad():
     ciudades["ciudades"].append(nuevas_ciudades)
 
     guardar_datos(ciudades, RUTA_JSON)
+
+
+def eliminar_ciudad():
+    ciudades = cargar_datos(RUTA_JSON)
+
+    ciudad_eliminar = int(input("Ingrese el código postal de la ciudad que desea eliminar"))
+    contador = -1
+    for i in ciudades["ciudades"]:
+        contador += 1
+        if(ciudad_eliminar == i["codigo_postal"]):
+            ciudades["ciudades"].pop(contador)
+            guardar_datos(ciudades, RUTA_JSON)
