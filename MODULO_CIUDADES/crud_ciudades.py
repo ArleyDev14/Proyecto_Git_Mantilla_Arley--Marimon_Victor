@@ -39,3 +39,33 @@ def agregar_ciudad():
     ciudades["ciudades"].append(nuevas_ciudades)
 
     guardar_datos(ciudades, RUTA_JSON)
+
+def actualizar_ciudades():
+    ciudades = cargar_datos(RUTA_JSON)
+
+    contador = 0
+
+    codigo = int(input("Ingrese el código postal: "))   
+
+    for i in ciudades["ciudades"]:
+        if(codigo == i["codigo_postal"]):
+            contador = 1
+            i["nombre"] = input("Ingrese el nuevo nombre de la ciudad: ")
+
+            i["codigo_postal"] = int(input("Ingrese el nuevo codigó postal de la ciudad: "))
+
+            i["poblacion"] = int(input("Ingrese la nueva población de la ciudad: "))
+
+            i["pais"] = input("Ingrese el nuevo país de la ciudad: ")
+
+            i["moneda"] = input("Ingrese la nueva moneda de la ciudad: ")
+
+            i["idioma"] = input("Ingrese el nuevo idioma de la ciudad: ")
+
+            guardar_datos(ciudades, RUTA_JSON)
+
+    if(contador == 0):
+        print("")
+        print(f"La ciudad con el codigo postal {codigo} NO existe")
+        print("")
+
