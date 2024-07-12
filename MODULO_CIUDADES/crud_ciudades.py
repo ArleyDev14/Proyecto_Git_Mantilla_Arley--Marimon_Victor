@@ -44,7 +44,7 @@ def agregar_ciudad():
 def eliminar_ciudad():
     ciudades = cargar_datos(RUTA_JSON)
 
-    ciudad_eliminar = int(input("Ingrese el código postal de la ciudad que desea eliminar"))
+    ciudad_eliminar = (input("Ingrese el código postal de la ciudad que desea eliminar"))
     contador = -1
     for i in ciudades["ciudades"]:
         contador += 1
