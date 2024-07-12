@@ -10,7 +10,7 @@ while True:
     if opc == 1:
         agregar_ciudad()
     elif opc == 2: 
-        print("Actualizar datos de una ciudad")
+        actualizar_ciudades()
     elif opc == 3:
         eliminar_ciudad()
     elif opc == 4:
