@@ -1,15 +1,20 @@
 import sys
 sys.path.append("..")
 from menus import *
+from MODULO_CIUDADES.crud_ciudades import *
+
 
 while True:
     menu_principal()
     opc = pedir_opc()
     if opc == 1:
-        print("Registrar una ciudad")
+        agregar_ciudad()
     elif opc == 2: 
         print("Actualizar datos de una ciudad")
     elif opc == 3:
-        print("Eliminar ciudad")
+        eliminar_ciudad()
     elif opc == 4:
         print("Buscar ciudad(Filtros)")
+    elif opc == 0:
+        print("Hasta luego")
+        break
