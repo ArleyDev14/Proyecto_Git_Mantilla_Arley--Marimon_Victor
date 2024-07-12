@@ -14,7 +14,7 @@ while True:
     elif opc == 3:
         eliminar_ciudad()
     elif opc == 4:
-        print("Buscar ciudad(Filtros)")
+        busqueda_avanzada()
     elif opc == 5:
         print_all()
     elif opc == 0:
