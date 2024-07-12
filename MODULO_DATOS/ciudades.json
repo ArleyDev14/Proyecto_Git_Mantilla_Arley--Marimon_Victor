@@ -11,12 +11,13 @@
         },
         {
             "id": 1,
-            "nombre": "Bucaramanga",
-            "codigo_postal": 777,
+            "nombre": "Bogota",
+            "codigo_postal": 1111,
             "poblaci\u00f3n": 2000000,
-            "pais": "Colombia",
-            "moneda": "Peso Colombiano",
-            "idioma": "Espa\u00f1ol"
+            "pais": "COlombia",
+            "moneda": "peso",
+            "idioma": "espa\u00f1oL",
+            "poblacion": 200000
         },
         {
             "id": 3,
