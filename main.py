@@ -15,6 +15,8 @@ while True:
         eliminar_ciudad()
     elif opc == 4:
         print("Buscar ciudad(Filtros)")
+    elif opc == 5:
+        print_all()
     elif opc == 0:
         print("Hasta luego")
         break
